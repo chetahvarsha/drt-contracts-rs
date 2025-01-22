@@ -1,0 +1,30 @@
+[package]
+name = "fair-launch"
+version = "0.0.0"
+authors = ["you"]
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies.dharitri-sc]
+version = "0.54.3"
+features = ["dcdt-token-payment-legacy-decode"]
+
+[dependencies.dharitri-sc-modules]
+version = "0.54.3"
+
+[dev-dependencies]
+num-bigint = "0.4.2"
+num-traits = "0.2"
+hex = "0.4"
+
+[dev-dependencies.dharitri-sc-scenario]
+version = "0.54.3"
+
+[dev-dependencies.crowdfunding-dcdt]
+path = "../crowdfunding-dcdt"
+
+[dev-dependencies.pair-mock]
+path = "../pair-mock"
